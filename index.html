@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman – Лаборатори 10</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="nicknameModal" class="modal">
+    <div class="modal-content">
+      <h2>Тоглогчийн нэр</h2>
+      <input type="text" id="nickname" placeholder="Нэрээ оруулна уу">
+      <button onclick="startGame()">Эхлэх</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>🎯 Үсэг Таах Тоглоом (Hangman)</h1>
+    <p id="wordDisplay">Үг: _ _ _ _ _</p>
+    <p>Таасан үсгүүд: <span id="guessedLetters"></span></p>
+    <p>Онош: <span id="status"></span></p>
+    <p>Оноо: <span id="score">0</span></p>
+    <p>🔄 Шинэ үг: <button onclick="resetGame()">Эхнээс</button></p>
+    <h3>🏆 ТОП 5 тоглогч</h3>
+    <ol id="topScores"></ol>
+  </div>
+</body>
+</html>
